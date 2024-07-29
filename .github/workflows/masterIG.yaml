@@ -2,15 +2,13 @@ name: Punlishing IG for JFAGY without production of packages
 on:
   push:
     branches: 
-      - master
+      - develop
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
       - '.github/workflows/masterIG.yaml'
-  pull_request:
-    branches: [ master ]
 env:
-  release_version : 20240709
+  release_version : 20240729
 jobs:
   turn1:
     runs-on: ubuntu-latest
@@ -93,6 +91,6 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz excel_files ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/ --exclude .htaccess
-        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/ ; tar xzf output.tgz'
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz excel_files ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/hexehrs.jp/coreFunctions/ --exclude .htaccess
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/hexehrs.jp/coreFunctions/ ; tar xzf output.tgz'
 

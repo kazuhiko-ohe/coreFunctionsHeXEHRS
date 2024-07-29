@@ -71,17 +71,6 @@ jobs:
         mv ./publisher.jar ./input-cache
         unset DISPLAY
         java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -tx n/a
-
-    - name: prepare gtz files for upload to remote site
-      run: | 
-        ruby ./script/create_symbolic_link_from_file2url.rb
-        : # 次の行のmakeSymbolicLink.bashは、直上のrubyスクリプトによって新たに作成されるbashスクリプトで、symbolic_linkを実際にln -s コマンドを順に実行して作成するスクリプト。
-        : # cat makeSymbolicLink.bash
-        cd output
-        source ../makeSymbolicLink.bash
-        : # ls -l
-        cd ..
-        cp excel_files/*.xlsx .
         tar czf output.tgz output
 
     - name: ssh key generate

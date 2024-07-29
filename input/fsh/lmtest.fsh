@@ -28,4 +28,4 @@ Characteristics: #can-be-target
 * ^copyright = "（一社）NeXEHRS. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
 
-* name 1..1 SU MS 
+* name 1..1 

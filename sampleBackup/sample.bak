@@ -2,7 +2,7 @@ Instance: HeXEHRS-F-01test
 InstanceOf: Requirements
 Usage: #example
 
-* url = "http://hl7.org/ehrs/Requirements/EHRSFMR2.1-TI.2.1"
+* url = "http://hl7.org/ehrs/Requirements/HeXEHRSCFR0.9-TI.2.1"
 * version = "0.15.0"
 * name = "TI_2_1_Audit_Triggers"
 * title = "TI.2.1 Audit Triggers (Function)"
@@ -21,7 +21,7 @@ Usage: #example
 
 * statement[0].extension.url = "http://hl7.org/ehrs/StructureDefinition/requirements-dependent"
 * statement[=].extension.valueBoolean = true
-* statement[=].key = "EHRSFMR2.1-TI.2.1-01"
+* statement[=].key = "HeXEHRSCFR0.9-TI.2.1-01"
 * statement[=].label = "TI.2.1#01"
 * statement[=].conformance = #SHALL
 * statement[=].conditionality = false
@@ -29,7 +29,7 @@ Usage: #example
 
 * statement[+].extension.url = "http://hl7.org/ehrs/StructureDefinition/requirements-dependent"
 * statement[=].extension.valueBoolean = true
-* statement[=].key = "EHRSFMR2.1-TI.2.1-02"
+* statement[=].key = "HeXEHRSCFR0.9-TI.2.1-02"
 * statement[=].label = "TI.2.1#02"
 * statement[=].conformance = #SHALL
 * statement[=].conditionality = false
@@ -37,7 +37,7 @@ Usage: #example
 
 * statement[+].extension.url = "http://hl7.org/ehrs/StructureDefinition/requirements-dependent"
 * statement[=].extension.valueBoolean = true
-* statement[=].key = "EHRSFMR2.1-TI.2.1-03"
+* statement[=].key = "HeXEHRSCFR0.9-TI.2.1-03"
 * statement[=].label = "TI.2.1#03"
 * statement[=].conformance = #SHALL
 * statement[=].conditionality = false

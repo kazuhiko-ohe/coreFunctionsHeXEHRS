@@ -18,8 +18,13 @@ Description: "HeXEHRS Core Functions のID体系"
 
 * ^property[+].code = #elementClass
 * ^property[=].uri = "http://hexehrs.sip3.jp/CodeSystem/elementClassClass"
+* ^property[=].type = #string
 * ^property[+].code = #relatedCondition
 * ^property[=].uri = "http://hexehrs.sip3.jp/CodeSystem/relatedCondition"
+* ^property[=].type = #string
+* ^property[+].code = #soapClass
+* ^property[=].uri = "http://hexehrs.sip3.jp/CodeSystem/soapClass"
+* ^property[=].type = #string
 
 * #1.1    "ポータル機能"
 * #1.2    "患者指定"
@@ -34,6 +39,7 @@ Description: "HeXEHRS Core Functions のID体系"
   * #1.4.1  "診療記録"
     * #1.4.1.1  "診療記録を自由記載方式で記録"
     * #1.4.1.2 "診療記録を構造的記載方式で記録"
+    
       * ^property[+].code = #elementClass
       * ^property[=].valueString = "主訴"
       * ^property[+].code = #elementClass
@@ -50,19 +56,23 @@ Description: "HeXEHRS Core Functions のID体系"
       * ^property[=].valueString = "身体所見"
     * #1.4.1.3    "プロブレムの記録"
       * #1.4.1.3.1  "関連病状の記録またはリンク設定"
-        * ^property[+].code = #releatedCondition
+      
+        * ^property[+].code = #relatedCondition
         * ^property[=].valueString = "関連病状"
+        
       * #1.4.1.3.2  "関連所見の記録またはリンク設定"
-        * ^property[+].code = #releatedCondition
+      
+        * ^property[+].code = #relatedCondition
         * ^property[=].valueString = "関連所見"
+        
       * #1.4.1.3.3  "診断病名の記録"
         * #1.4.3.3.1  "診断の確らしさを記録"
         * #1.4.3.3.2  "診断の根拠を記録"
         * #1.4.3.3.3  "他の鑑別すべき診断を記録"
     * #1.4.1.4    "SOAP形式での記録"
-      * #1.4.1.4.1 "Subjectiveの記録"
+      * #1.4.1.4.1 "Subjectiveの記録"      
         * ^property[+].code = #soapClass
-        * ^property[=].valueString = "Subjective"
+        * ^property[=].valueString = "Subjective"        
       * #1.4.1.4.2 "Objectiveの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Objective"
@@ -72,10 +82,7 @@ Description: "HeXEHRS Core Functions のID体系"
       * #1.4.1.4.4 "Planの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Plan"
-        
-
-    * #1.4.1.5    "インフォームドコンセント記録" "説明内容と同意内容を、なるべく施設推奨の定型様式での記載"
-
+    * #1.4.1.5    "インフォームドコンセント記録"
   * #1.4.2  "オーダ作成・登録"
   * #1.4.3  "事後入力機能"
   * #1.4.4  "イベント記録・イベント時記録"

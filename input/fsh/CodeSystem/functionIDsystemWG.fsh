@@ -32,8 +32,8 @@ Description: "HeXEHRS Core Functions のID体系"
   * #1.3.4  "SOAPフロー表示"
 * #1.4    "診療記録入力・修正"
   * #1.4.1  "診療記録"
-    * #1.4.1.0  "診療記録を自由記載方式で記録"
-    * #1.4.1.0  "診療記録を構造的記載方式で記録"
+    * #1.4.1.1  "診療記録を自由記載方式で記録"
+    * #1.4.1.2 "診療記録を構造的記載方式で記録"
       * ^property[+].code = #elementClass
       * ^property[=].valueString = "主訴"
       * ^property[+].code = #elementClass
@@ -48,33 +48,33 @@ Description: "HeXEHRS Core Functions のID体系"
       * ^property[=].valueString = "生活習慣"
       * ^property[+].code = #elementClass
       * ^property[=].valueString = "身体所見"
-    * #1.4.1.1    "プロブレムの記録"
-      * #1.4.1.1.1  "関連病状の記録またはリンク設定"
+    * #1.4.1.3    "プロブレムの記録"
+      * #1.4.1.3.1  "関連病状の記録またはリンク設定"
         * ^property[+].code = #releatedCondition
         * ^property[=].valueString = "関連病状"
-      * #1.4.1.1.1  "関連所見の記録またはリンク設定"
+      * #1.4.1.3.1  "関連所見の記録またはリンク設定"
         * ^property[+].code = #releatedCondition
         * ^property[=].valueString = "関連所見"
-      * #1.4.1.1.1  "診断病名の記録"
-        * #1.4.1.1.1  "診断の確らしさを記録"
-        * #1.4.1.1.2  "診断の根拠を記録"
-        * #1.4.1.1.3  "他の鑑別すべき診断を記録"
-    * #1.4.1.2    "SOAP形式での記録"
-      * #1.4.1.2.1 "Subjectiveの記録"
+      * #1.4.1.3.1  "診断病名の記録"
+        * #1.4.3.1.1  "診断の確らしさを記録"
+        * #1.4.3.1.2  "診断の根拠を記録"
+        * #1.4.3.1.3  "他の鑑別すべき診断を記録"
+    * #1.4.1.4    "SOAP形式での記録"
+      * #1.4.1.4.1 "Subjectiveの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Subjective"
-      * #1.4.1.2.2 "Objectiveの記録"
+      * #1.4.1.4.2 "Objectiveの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Objective"
-      * #1.4.1.2.3 "Assessmentの記録"
+      * #1.4.1.4.3 "Assessmentの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Assessment"
-      * #1.4.1.2.3 "Planの記録"
+      * #1.4.1.4.3 "Planの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Plan"
         
 
-    * #1.4.1.3    "インフォームドコンセント記録" "説明内容と同意内容を、なるべく施設推奨の定型様式での記載"
+    * #1.4.1.5    "インフォームドコンセント記録" "説明内容と同意内容を、なるべく施設推奨の定型様式での記載"
 
   * #1.4.2  "オーダ作成・登録"
   * #1.4.3  "事後入力機能"

@@ -3,25 +3,25 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: jpfhir.jp.fhir.LMTEST
-canonical: http://jpfhir.jp/fhir/LMTEST
-name: LMTEST
-title: "LMTEST"
-description: "LMTEST"
+id: hexehrs.sip3.jp
+canonical: http://hexehrs.sip3.jp/coreFunctions
+name: CoreFunctions
+title: "CoreFunctions"
+description: "CoreFunctions"
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
 version: "2024.7.9"
-fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: 国立大学法人東京大学（大学院医学系研究科医療情報学分野）
-  url: http://www.m.u-tokyo.ac.jp/medinfo/JFAGY
+  name: NeXEHRS-CPC
+  url: http://nexehrs-cpc.jp
   # email: test@example.org
-copyright: 国立大学法人東京大学
+copyright: NeXEHRS-CPC,JAMI
 jurisdiction: 'urn:iso:std:iso:3166#JP'
 
 #----------------------------------------
@@ -29,7 +29,7 @@ jurisdiction: 'urn:iso:std:iso:3166#JP'
 #----------------------------------------
 pages:
   index.md:
-    title: LMTEST
+    title: CoreFunctions
 #-------------------------------------
 # メニュー設定
 #-------------------------------------
@@ -68,8 +68,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - json
   no-validate:
     - '*/hl7.fhir.jp.core'
-  special-url:
-    - http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS
+#
+#  special-url:
+#    - http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS
 
   
   

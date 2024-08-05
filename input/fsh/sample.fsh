@@ -1,0 +1,44 @@
+Instance: HeXEHRS-F-01test
+InstanceOf: Requirements
+Usage: #example
+
+* url = "http://hl7.org/ehrs/Requirements/EHRSFMR2.1-TI.2.1"
+* version = "0.15.0"
+* name = "TI_2_1_Audit_Triggers"
+* title = "TI.2.1 Audit Triggers (Function)"
+* status = #active
+* date = "2024-06-02T08:38:21+00:00"
+* publisher = "EHR WG"
+* description = "Manage Audit Triggers"
+
+/*
+* #1.3    "診療記録閲覧"
+  * #1.3.1  "記録履歴（一覧）からの診療記録の検索・選択"
+  * #1.3.2  "診療記録の内容表示"
+  * #1.3.3  "診療記録の修正表示"
+  * #1.3.4  "SOAPフロー表示"
+*/
+
+* statement[0].extension.url = "http://hl7.org/ehrs/StructureDefinition/requirements-dependent"
+* statement[=].extension.valueBoolean = true
+* statement[=].key = "EHRSFMR2.1-TI.2.1-01"
+* statement[=].label = "TI.2.1#01"
+* statement[=].conformance = #SHALL
+* statement[=].conditionality = false
+* statement[=].requirement = "The system SHALL audit key events, as specified in function [[TI.2.1]] (Audit Triggers) and child functions, according to scope of practice, organizational policy, and/or jurisdictional law."
+
+* statement[+].extension.url = "http://hl7.org/ehrs/StructureDefinition/requirements-dependent"
+* statement[=].extension.valueBoolean = true
+* statement[=].key = "EHRSFMR2.1-TI.2.1-02"
+* statement[=].label = "TI.2.1#02"
+* statement[=].conformance = #SHALL
+* statement[=].conditionality = false
+* statement[=].requirement = "The system SHALL capture key Audit Metadata at each Audit Trigger, as specified in [[TI.2.1]] (Audit Triggers) and child functions, according to scope of practice, organizational policy, and/or jurisdictional law."
+
+* statement[+].extension.url = "http://hl7.org/ehrs/StructureDefinition/requirements-dependent"
+* statement[=].extension.valueBoolean = true
+* statement[=].key = "EHRSFMR2.1-TI.2.1-03"
+* statement[=].label = "TI.2.1#03"
+* statement[=].conformance = #SHALL
+* statement[=].conditionality = false
+* statement[=].requirement = "The system SHALL capture an Audit Log Entry at each Audit Trigger as specified in [[TI.2.1]] (Audit Triggers) according to scope of practice, organizational policy, and/or jurisdictional law."

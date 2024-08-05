@@ -1,7 +1,7 @@
 //
 
 CodeSystem: HeXEHRS_CoreFunctions_CS
-Id: hexehrs-coreFunctions-cs
+Id: coreFunctions-cs
 Title: "HeXEHRS System Core Functions Code System"
 Description: "HeXEHRS Core Functions のID体系"
 * ^url = "http://hexehrs.sip3.jp/coreFunctions-cs"

@@ -1,10 +1,10 @@
 //
 
-CodeSystem: SIP3_HeXEHRS_CoreFunctions_CS
-Id: sip3-hexehrs-coreFunctions-cs
+CodeSystem: HeXEHRS_CoreFunctions_CS
+Id: hexehrs-coreFunctions-cs
 Title: "HeXEHRS System Core Functions Code System"
 Description: "HeXEHRS Core Functions のID体系"
-* ^url = "http://nexehrs-cpc.jp/hexehrs/coreFunctions-cs"
+* ^url = "http://hexehrs.sip3.jp/coreFunctions-cs"
 * ^title = "HeXEHRS System Core Functions Code System"
 
 * ^version = "0.9.0"

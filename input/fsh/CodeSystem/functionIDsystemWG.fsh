@@ -52,13 +52,13 @@ Description: "HeXEHRS Core Functions のID体系"
       * #1.4.1.3.1  "関連病状の記録またはリンク設定"
         * ^property[+].code = #releatedCondition
         * ^property[=].valueString = "関連病状"
-      * #1.4.1.3.1  "関連所見の記録またはリンク設定"
+      * #1.4.1.3.2  "関連所見の記録またはリンク設定"
         * ^property[+].code = #releatedCondition
         * ^property[=].valueString = "関連所見"
-      * #1.4.1.3.1  "診断病名の記録"
-        * #1.4.3.1.1  "診断の確らしさを記録"
-        * #1.4.3.1.2  "診断の根拠を記録"
-        * #1.4.3.1.3  "他の鑑別すべき診断を記録"
+      * #1.4.1.3.3  "診断病名の記録"
+        * #1.4.3.3.1  "診断の確らしさを記録"
+        * #1.4.3.3.2  "診断の根拠を記録"
+        * #1.4.3.3.3  "他の鑑別すべき診断を記録"
     * #1.4.1.4    "SOAP形式での記録"
       * #1.4.1.4.1 "Subjectiveの記録"
         * ^property[+].code = #soapClass
@@ -69,7 +69,7 @@ Description: "HeXEHRS Core Functions のID体系"
       * #1.4.1.4.3 "Assessmentの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Assessment"
-      * #1.4.1.4.3 "Planの記録"
+      * #1.4.1.4.4 "Planの記録"
         * ^property[+].code = #soapClass
         * ^property[=].valueString = "Plan"
         

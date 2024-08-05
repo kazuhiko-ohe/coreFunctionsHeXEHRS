@@ -1,0 +1,175 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "jpfhir.jp.fhir.LMTEST",
+  "url": "http://jpfhir.jp/fhir/LMTEST/ImplementationGuide/jpfhir.jp.fhir.LMTEST",
+  "version": "2024.7.9",
+  "name": "LMTEST",
+  "title": "LMTEST",
+  "status": "active",
+  "publisher": "国立大学法人東京大学（大学院医学系研究科医療情報学分野）",
+  "contact": [
+    {
+      "name": "国立大学法人東京大学（大学院医学系研究科医療情報学分野）",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.m.u-tokyo.ac.jp/medinfo/JFAGY"
+        }
+      ]
+    }
+  ],
+  "description": "LMTEST",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "JP",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "copyright": "国立大学法人東京大学",
+  "packageId": "jpfhir.jp.fhir.LMTEST",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/ehr-function-logical-model"
+        },
+        "name": "EHR Function",
+        "description": "EHR Function",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-member"
+        },
+        "name": "Family Member",
+        "description": "A reference to a family member (not necessarily biologically related).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sip3-hexehrs-coreFunctions-cs"
+        },
+        "name": "HeXEHRS System Core Functions Code System",
+        "description": "HeXEHRS Core Functions のID体系",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "LMTEST",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../input/_resources/exp-params.json"
+      },
+      {
+        "code": "active-tables",
+        "value": "false"
+      },
+      {
+        "code": "apply-version",
+        "value": "false"
+      },
+      {
+        "code": "apply-copyright",
+        "value": "true"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "apply-license",
+        "value": "true"
+      },
+      {
+        "code": "apply-jurisdiction",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "true"
+      },
+      {
+        "code": "usage-stats-opt-out",
+        "value": "true"
+      },
+      {
+        "code": "excludexml",
+        "value": "true"
+      },
+      {
+        "code": "excludejson",
+        "value": "false"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "false"
+      },
+      {
+        "code": "generate",
+        "value": "json"
+      },
+      {
+        "code": "no-validate",
+        "value": "*/hl7.fhir.jp.core"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS"
+      }
+    ]
+  }
+}

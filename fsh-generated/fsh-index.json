@@ -1,0 +1,26 @@
+[
+  {
+    "outputFile": "CodeSystem-sip3-hexehrs-coreFunctions-cs.json",
+    "fshName": "SIP3_HeXEHRS_CoreFunctions_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem/functionIDsystem.fsh",
+    "startLine": 3,
+    "endLine": 60
+  },
+  {
+    "outputFile": "StructureDefinition-ehr-function-logical-model.json",
+    "fshName": "EHRFunction",
+    "fshType": "Logical",
+    "fshFile": "lmtest.fsh",
+    "startLine": 19,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-family-member.json",
+    "fshName": "FamilyMember",
+    "fshType": "Logical",
+    "fshFile": "lmtest.fsh",
+    "startLine": 41,
+    "endLine": 47
+  }
+]

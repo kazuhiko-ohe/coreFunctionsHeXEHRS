@@ -1,11 +1,11 @@
 //
 
-CodeSystem: HeXEHRS_CoreFunctions_CS
-Id: coreFunctions-cs
-Title: "HeXEHRS System Core Functions Code System"
+CodeSystem: HeXEHRS_CoreFunctions_Record_CS
+Id: coreFunctions-record-cs
+Title: "HeXEHRS System Core Functions Code System for Record"
 Description: "HeXEHRS Core Functions のID体系"
-* ^url = "http://hexehrs.sip3.jp/coreFunctions-cs"
-* ^title = "HeXEHRS System Core Functions Code System"
+* ^url = "http://hexehrs.sip3.jp/coreFunctions-record-cs"
+* ^title = "HeXEHRS System Core Functions Code System for Record"
 
 * ^version = "0.9.0"
 * ^status = #active
@@ -307,7 +307,7 @@ Description: "HeXEHRS Core Functions のID体系"
   * #R1.6.10  "診療所経営支援"
     * #R1.6.10.1 "診療実績ダッシュボード"
   * #R1.6.11 "システム導入・更新支援"
-    * #R1.6.10.1 
+    * #R1.6.11.1 "標準マスター更新を外部サーバから自動で行う"
 * #R1.7    "診療記録管理"
   * #R1.7.1  "プロブレムリスト管理"
   * #R1.7.2  "オーダと記録の履歴管理"
@@ -340,8 +340,8 @@ Description: "HeXEHRS Core Functions のID体系"
       * #R1.12.3.1.4 "他機関とのオンラインミーティング・チャット相談"
       * #R1.12.3.1.5 "支援病院での診療カンファランス"
     * #R1.12.3.2 "巡回診療所での診療支援"
-      #1.12.3.2.1 "訪問診療先でオフラインでカルテを利用"
-      #1.12.3.2.2 "多様な解像度デバイスに対応"
+      * #1.12.3.2.1 "訪問診療先でオフラインでカルテを利用"
+      * #1.12.3.2.2 "多様な解像度デバイスに対応"
     * #R1.12.3.3 "地域医療データ分析・可視化"
   * #R1.12.4 "患者との診療コミュニケーション"
     * #R1.12.4.1 "患者・職種間コミュニケーション支援"

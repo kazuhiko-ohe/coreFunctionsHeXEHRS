@@ -2,10 +2,10 @@
 
 CodeSystem: HeXEHRS_CoreFunctions_Record_CS
 Id: coreFunctions-record-cs
-Title: "HeXEHRS System Core Functions Code System for Record"
+Title: "HeXEHRS System Core Functions Code System for Clinical Record"
 Description: "HeXEHRS Core Functions のID体系"
 * ^url = "http://hexehrs.sip3.jp/coreFunctions-record-cs"
-* ^title = "HeXEHRS System Core Functions Code System for Record"
+* ^title = "HeXEHRS System Core Functions Code System for Clinical Record"
 
 * ^version = "0.9.0"
 * ^status = #active

@@ -7,7 +7,7 @@ Description: "HeXEHRS Core Functions for PrescriptionOrder のID体系"
 * ^title = "HeXEHRS System Core Functions Code System for PrescriptionOrder"
 
 * ^version = "0.9.0"
-* ^status = #active
+* ^status = #acti
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false

@@ -34,7 +34,7 @@
       <p>This page provides a list of the FHIR artifacts defined as part of this implementation
       guide.</p>
       -->
-      <p>このページでは、この実装ガイドの一部として定義されたFHIR定義記述（FHIR Artifacts）の一覧である。ただし、Profile定義の一覧は、本文ページに移動した。</p>
+      <p>このページは、コア機能で定義されたFHIR定義記述（FHIR Artifacts）の一覧である。</p>
 
       <xsl:if test="$globals='Y'">
         <a name="globals">

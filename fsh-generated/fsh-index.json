@@ -1,0 +1,42 @@
+[
+  {
+    "outputFile": "CodeSystem-coreFunctions-injectionOrder-cs.json",
+    "fshName": "HeXEHRS_CoreFunctions_InjectionOrder_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem/functionIDsystem_order2_WG.fsh",
+    "startLine": 2,
+    "endLine": 113
+  },
+  {
+    "outputFile": "CodeSystem-coreFunctions-insuranceMngFeeOrder-cs.json",
+    "fshName": "HeXEHRS_CoreFunctions_InsuranceMngFeeOrder_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem/functionIDsystem_order9_WG.fsh",
+    "startLine": 2,
+    "endLine": 93
+  },
+  {
+    "outputFile": "CodeSystem-coreFunctions-laboExamOrder-cs.json",
+    "fshName": "HeXEHRS_CoreFunctions_LaboExamOrder_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem/functionIDsystem_order3_WG.fsh",
+    "startLine": 2,
+    "endLine": 87
+  },
+  {
+    "outputFile": "CodeSystem-coreFunctions-prescriptionOrder-cs.json",
+    "fshName": "HeXEHRS_CoreFunctions_PrescriptionOrder_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem/functionIDsystem_order1_WG.fsh",
+    "startLine": 2,
+    "endLine": 87
+  },
+  {
+    "outputFile": "CodeSystem-coreFunctions-record-cs.json",
+    "fshName": "HeXEHRS_CoreFunctions_Record_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem/functionIDsystem_record_WG.fsh",
+    "startLine": 3,
+    "endLine": 382
+  }
+]

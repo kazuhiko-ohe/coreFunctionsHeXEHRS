@@ -1,0 +1,6 @@
+Output File                                            Name                                           Type        FSH File                                   Lines
+CodeSystem-coreFunctions-injectionOrder-cs.json        HeXEHRS_CoreFunctions_InjectionOrder_CS        CodeSystem  CodeSystem/functionIDsystem_order2_WG.fsh  2 - 113
+CodeSystem-coreFunctions-insuranceMngFeeOrder-cs.json  HeXEHRS_CoreFunctions_InsuranceMngFeeOrder_CS  CodeSystem  CodeSystem/functionIDsystem_order9_WG.fsh  2 - 93
+CodeSystem-coreFunctions-laboExamOrder-cs.json         HeXEHRS_CoreFunctions_LaboExamOrder_CS         CodeSystem  CodeSystem/functionIDsystem_order3_WG.fsh  2 - 87
+CodeSystem-coreFunctions-prescriptionOrder-cs.json     HeXEHRS_CoreFunctions_PrescriptionOrder_CS     CodeSystem  CodeSystem/functionIDsystem_order1_WG.fsh  2 - 87
+CodeSystem-coreFunctions-record-cs.json                HeXEHRS_CoreFunctions_Record_CS                CodeSystem  CodeSystem/functionIDsystem_record_WG.fsh  3 - 382

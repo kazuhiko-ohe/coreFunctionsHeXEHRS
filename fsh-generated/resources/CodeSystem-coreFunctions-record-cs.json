@@ -1,0 +1,1522 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "HeXEHRS_CoreFunctions_Record_CS",
+  "id": "coreFunctions-record-cs",
+  "title": "HeXEHRS System Core Functions Code System for Clinical Record",
+  "description": "HeXEHRS Core Functions の　診療記録・管理　ID体系",
+  "url": "http://hexehrs.sip3.jp/coreFunctions-record-cs",
+  "concept": [
+    {
+      "code": "R1.1",
+      "display": "ポータル"
+    },
+    {
+      "code": "R1.2",
+      "display": "患者指定",
+      "concept": [
+        {
+          "code": "R1.2.1",
+          "display": "患者検索",
+          "concept": [
+            {
+              "code": "R1.2.1.1",
+              "display": "検索条件設定",
+              "concept": [
+                {
+                  "code": "R1.2.1.1.T1",
+                  "display": ":患者ID"
+                },
+                {
+                  "code": "R1.2.1.1.T2",
+                  "display": ":氏名"
+                },
+                {
+                  "code": "R1.2.1.1.T3",
+                  "display": ":性別"
+                },
+                {
+                  "code": "R1.2.1.1.T4",
+                  "display": ":診療日・診療期間"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.2.2",
+          "display": "当日患者一覧表示"
+        },
+        {
+          "code": "R1.2.2.1",
+          "display": "患者選択"
+        }
+      ]
+    },
+    {
+      "code": "R1.3",
+      "display": "診療記録閲覧",
+      "concept": [
+        {
+          "code": "R1.3.1",
+          "display": "記録の履歴表示と記録選択",
+          "concept": [
+            {
+              "code": "R1.3.1.1",
+              "display": "時系列ベースの履歴表示と記録選択",
+              "concept": [
+                {
+                  "code": "R1.3.1.1.1",
+                  "display": "受診歴の表示と記録選択",
+                  "concept": [
+                    {
+                      "code": "R1.3.1.1.1.1",
+                      "display": "外来受診歴の表示と記録選択"
+                    },
+                    {
+                      "code": "R1.3.1.1.1.2",
+                      "display": "入院歴の表示と記録選択"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.3.1.2",
+              "display": "プロブレムベースの履歴表示と記録選択"
+            },
+            {
+              "code": "R1.3.1.3",
+              "display": "医療行為歴ベースの履歴表示と記録選択",
+              "definition": "処方歴、検査歴、その他の医療提供行為の表示とそこからの選択",
+              "concept": [
+                {
+                  "code": "R1.3.1.3.1",
+                  "display": "オーダ歴",
+                  "concept": [
+                    {
+                      "code": "R1.3.1.3.1.1",
+                      "display": "オーダ種別選択",
+                      "concept": [
+                        {
+                          "code": "R1.3.1.3.1.1.T1",
+                          "display": ":処方",
+                          "definition": "See. S1.1"
+                        },
+                        {
+                          "code": "R1.3.1.3.1.1.T2",
+                          "display": ":注射",
+                          "definition": "See. S2.1"
+                        },
+                        {
+                          "code": "R1.3.1.3.1.1.T3",
+                          "display": ":検体検査",
+                          "definition": "See. S3.1"
+                        },
+                        {
+                          "code": "R1.3.1.3.1.1.T4",
+                          "display": ":細菌検査",
+                          "definition": "See. S4.1"
+                        },
+                        {
+                          "code": "R1.3.1.3.1.1.T5",
+                          "display": ":病理検査",
+                          "definition": "See. S5.1"
+                        },
+                        {
+                          "code": "R1.3.1.3.1.1.T6",
+                          "display": ":診療予約",
+                          "definition": "See. S6.1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.1.3.2",
+                  "display": "オーダ実施記録歴"
+                },
+                {
+                  "code": "R1.3.1.3.3",
+                  "display": "医療機器装着・使用歴"
+                },
+                {
+                  "code": "R1.3.1.3.4",
+                  "display": "予防接種歴"
+                },
+                {
+                  "code": "R1.3.1.3.5",
+                  "display": "臨床研究・治験参加歴"
+                }
+              ]
+            },
+            {
+              "code": "R1.3.1.4",
+              "display": "診療エピソードベースの履歴表示と記録選択",
+              "definition": "診療エピソードとは、プロブレム、医療行為以外で患者におこなった主として医療上のエピソート",
+              "concept": [
+                {
+                  "code": "R1.3.1.4.1",
+                  "display": "自動作成した構造情報の履歴表示と記録選択"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.3.2",
+          "display": "記録の検索",
+          "concept": [
+            {
+              "code": "R1.3.2.1",
+              "display": "検索対象条件の設定",
+              "concept": [
+                {
+                  "code": "R1.3.2.1.T1",
+                  "display": ":検索対象とする患者集団の条件設定",
+                  "property": [
+                    {
+                      "code": "searchClass",
+                      "valueString": "PatientGroup"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.2.1.T2",
+                  "display": ":検索対象とする記録の期間の設定",
+                  "property": [
+                    {
+                      "code": "searchClass",
+                      "valueString": "period"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.2.1.T3",
+                  "display": ":検索対象とする記録のカテゴリーの設定",
+                  "property": [
+                    {
+                      "code": "searchClass",
+                      "valueString": "documentGroup"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.3.2.2",
+              "display": "設定された対象での全文検索",
+              "concept": [
+                {
+                  "code": "R1.4.2.2.1",
+                  "display": "検索項目・検索値・論理条件の設定"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.3.3",
+          "display": "診療記録の内容の表示",
+          "concept": [
+            {
+              "code": "R1.3.3.1",
+              "display": "診療記録の内容の構造的表示",
+              "concept": [
+                {
+                  "code": "R1.3.3.1.T1",
+                  "display": ":主訴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "主訴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.3.1.T2",
+                  "display": ":現病歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "現病歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.3.1.T3",
+                  "display": ":既往歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "既往歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.3.1.T4",
+                  "display": ":家族歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "家族歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.3.1.T5",
+                  "display": ":社会活動歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "社会活動歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.3.1.T6",
+                  "display": ":生活習慣",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "生活習慣"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.3.1.T7",
+                  "display": ":身体所見",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "身体所見"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.3.3.2",
+              "display": "診療記録の修正履歴表示"
+            },
+            {
+              "code": "R1.3.3.3",
+              "display": "SOAPフロー表示"
+            }
+          ]
+        },
+        {
+          "code": "R1.3.4",
+          "display": "診療記録の要約情報の表示",
+          "concept": [
+            {
+              "code": "R1.3.4.T1",
+              "display": ":患者プロファイル",
+              "concept": [
+                {
+                  "code": "R1.3.4.T1.T1",
+                  "display": ":氏名",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "氏名"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T2",
+                  "display": ":生年月日",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "生年月日"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T3",
+                  "display": ":性別",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "性別"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T4",
+                  "display": ":国籍",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "国籍"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T5",
+                  "display": ":民族",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "民族"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T6",
+                  "display": ":言語",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "言語"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T7",
+                  "display": ":住所",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "住所"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T8",
+                  "display": ":連絡方法",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "連絡方法"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T9",
+                  "display": ":キーパーソン",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "キーパーソン"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T10",
+                  "display": ":ケア担当者",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "ケア担当者"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T11",
+                  "display": ":患者・家族の希望",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "患者・家族の希望"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T12",
+                  "display": ":ACP",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "ACP"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T13",
+                  "display": ":アレルギー情報",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "アレルギー情報"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T14",
+                  "display": ":医療情報の注意喚起",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "医療情報の注意喚起"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T15",
+                  "display": ":意思疎通上の問題",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "意思疎通上の問題"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T16",
+                  "display": ":感染症情報",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "感染症情報"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.T17",
+                  "display": ":臨床研究・治験参加状況",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "臨床研究・治験参加状況"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.4.T1.1",
+                  "display": "対象項目の履歴表示",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "対象項目の履歴表示"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.3.4.T2",
+              "display": ":直近の結果観察",
+              "property": [
+                {
+                  "code": "elementClass",
+                  "valueString": "直近の結果観察"
+                }
+              ]
+            },
+            {
+              "code": "R1.3.4.T3",
+              "display": ":直近の処方",
+              "property": [
+                {
+                  "code": "elementClass",
+                  "valueString": "直近の処方"
+                }
+              ]
+            },
+            {
+              "code": "R1.3.4.T4",
+              "display": ":直近のプロブレム",
+              "property": [
+                {
+                  "code": "elementClass",
+                  "valueString": "直近のプロブレム"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.3.6",
+          "display": "診療記録の多様な方法による表示",
+          "concept": [
+            {
+              "code": "R1.3.6.1",
+              "display": "表示方式の選択",
+              "concept": [
+                {
+                  "code": "R1.3.6.1.1",
+                  "display": "テンプレート構造での表示"
+                },
+                {
+                  "code": "R1.3.6.1.2",
+                  "display": "SOAP構造での表示"
+                },
+                {
+                  "code": "R1.3.6.1.3",
+                  "display": "時系列遷移のグラフィカル表示"
+                },
+                {
+                  "code": "R1.3.6.1.4",
+                  "display": "患者身体図によるグラフィカル表示"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.3.7",
+          "display": "他施設の診療記録の表示",
+          "definition": "他の機関で記録された診療記録を自機関から参照",
+          "concept": [
+            {
+              "code": "R1.3.7.1",
+              "display": "外部連携リソースの表示",
+              "concept": [
+                {
+                  "code": "R1.3.7.1.T2",
+                  "display": ":電子カルテ情報共有サービスの表示",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "電子カルテ情報共有サービス"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.7.1.T4",
+                  "display": ":連携医療機関の電子カルテの表示",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "連携医療機関の電子カルテ"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.3.8",
+          "display": "患者・家族関係者による閲覧",
+          "concept": [
+            {
+              "code": "R1.3.8.1",
+              "display": "患者・家族関係者のアクセス"
+            },
+            {
+              "code": "R1.3.8.2",
+              "display": "患者・家族関係者に対する表示"
+            },
+            {
+              "code": "R1.3.8.3",
+              "display": "制度としてのカルテ開示",
+              "concept": [
+                {
+                  "code": "R1.3.8.3.T1",
+                  "display": ":対象とする記録の期間の設定",
+                  "property": [
+                    {
+                      "code": "searchClass",
+                      "valueString": "period"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.3.8.3.T2",
+                  "display": ":対象とする記録のカテゴリーの設定",
+                  "property": [
+                    {
+                      "code": "searchClass",
+                      "valueString": "documentGroup"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "R1.4",
+      "display": "診療記録入力・修正",
+      "concept": [
+        {
+          "code": "R1.4.1",
+          "display": "診療記録",
+          "concept": [
+            {
+              "code": "R1.4.1.1",
+              "display": "診療記録を自由記載方式で記録"
+            },
+            {
+              "code": "R1.4.1.2",
+              "display": "診療記録を構造的記載方式で記録",
+              "concept": [
+                {
+                  "code": "R1.4.1.2.T1",
+                  "display": ":主訴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "主訴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.2.T2",
+                  "display": ":現病歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "現病歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.2.T3",
+                  "display": ":既往歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "既往歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.2.T4",
+                  "display": ":家族歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "家族歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.2.T5",
+                  "display": ":社会活動歴",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "社会活動歴"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.2.T6",
+                  "display": ":生活習慣",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "生活習慣"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.2.T7",
+                  "display": ":身体所見",
+                  "property": [
+                    {
+                      "code": "elementClass",
+                      "valueString": "身体所見"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.4.1.3",
+              "display": "プロブレムの記録",
+              "concept": [
+                {
+                  "code": "R1.4.1.3.1",
+                  "display": "関連病状の記録またはリンク設定",
+                  "property": [
+                    {
+                      "code": "relatedCondition",
+                      "valueString": "関連病状"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.3.2",
+                  "display": "関連所見の記録またはリンク設定",
+                  "property": [
+                    {
+                      "code": "relatedCondition",
+                      "valueString": "関連所見"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.3.3",
+                  "display": "診断病名の記録",
+                  "concept": [
+                    {
+                      "code": "R1.4.3.3.1",
+                      "display": "診断の確らしさを記録"
+                    },
+                    {
+                      "code": "R1.4.3.3.2",
+                      "display": "診断の根拠を記録"
+                    },
+                    {
+                      "code": "R1.4.3.3.3",
+                      "display": "他の鑑別すべき診断を記録"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.4.1.4",
+              "display": "SOAP形式での記録",
+              "concept": [
+                {
+                  "code": "R1.4.1.4.T1",
+                  "display": "Subjectiveの記録",
+                  "property": [
+                    {
+                      "code": "soapClass",
+                      "valueString": "Subjective"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.4.T2",
+                  "display": "Objectiveの記録",
+                  "property": [
+                    {
+                      "code": "soapClass",
+                      "valueString": "Objective"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.4.T3",
+                  "display": "Assessmentの記録",
+                  "property": [
+                    {
+                      "code": "soapClass",
+                      "valueString": "Assessment"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.4.1.4.T4",
+                  "display": "Planの記録",
+                  "concept": [
+                    {
+                      "code": "R1.4.1.4.4.1",
+                      "display": "Planのスケジュールの記録"
+                    },
+                    {
+                      "code": "R1.4.1.4.4.2",
+                      "display": "Planの意図（計画理由・根拠）の記録"
+                    },
+                    {
+                      "code": "R1.4.1.4.4.3",
+                      "display": "Planのアクションの記録"
+                    }
+                  ],
+                  "property": [
+                    {
+                      "code": "soapClass",
+                      "valueString": "Plan"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.4.2",
+          "display": "オーダ作成・登録",
+          "concept": [
+            {
+              "code": "R1.4.2.T1",
+              "display": ":処方",
+              "definition": "See. S1.1"
+            },
+            {
+              "code": "R1.4.2.T2",
+              "display": ":注射",
+              "definition": "See. S2.1"
+            },
+            {
+              "code": "R1.4.2.T3",
+              "display": ":検体検査",
+              "definition": "See. S3.1"
+            },
+            {
+              "code": "R1.4.2.T4",
+              "display": ":細菌検査",
+              "definition": "See. S4.1"
+            },
+            {
+              "code": "R1.4.2.T5",
+              "display": ":病理検査",
+              "definition": "See. S5.1"
+            },
+            {
+              "code": "R1.4.2.T6",
+              "display": ":診療予約",
+              "definition": "See. S6.1",
+              "concept": [
+                {
+                  "code": "R1.4.2.T6.1",
+                  "display": ":外来診療予約"
+                },
+                {
+                  "code": "R1.4.2.T6.2",
+                  "display": ":オンライン診察予約"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.4.3",
+          "display": "実施後入力"
+        },
+        {
+          "code": "R1.4.4",
+          "display": "イベント記録・イベント時状況記録"
+        },
+        {
+          "code": "R1.4.5",
+          "display": "周辺情報・コンテキスト情報記録"
+        },
+        {
+          "code": "R1.4.6",
+          "display": "患者の意思・同意・希望記録",
+          "concept": [
+            {
+              "code": "R1.4.6.1",
+              "display": "説明）ACP(AdvancedCarePlan)の記録",
+              "definition": "患者本人、家族、関係医療・介護スタッフが利用できるACP機能をサポート。在宅医療、総合診療の必要性がより高いと考えられるへき地医療の特性を踏まえ、患者自身の価値観、その家族（遠方に暮らしていることも想定）、そして地域の関係する医療・介護従事者で治療方針、人生の終い方について確認、共有できる機能を備える。また、この記録は常にアップデート可能であり、その履歴も管理できることが必要。"
+            },
+            {
+              "code": "R1.4.6.2",
+              "display": "インフォームドコンセント記録"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "R1.5",
+      "display": "記録署名",
+      "concept": [
+        {
+          "code": "R1.5.1",
+          "display": "情報発生タイムスタンプ管理",
+          "definition": "説明）全ての記録はその情報が発生したタイムスタンプによる時系列管理と表示ができるようにする。"
+        },
+        {
+          "code": "R1.5.2",
+          "display": "記録登録タイムスタンプ管理",
+          "definition": "説明）全ての記録はその情報がシステムに登録されたタイムスタンプによる時系列管理ができるようにする。"
+        }
+      ]
+    },
+    {
+      "code": "R1.6",
+      "display": "支援",
+      "concept": [
+        {
+          "code": "R1.6.1",
+          "display": "診療記録入力支援",
+          "concept": [
+            {
+              "code": "R1.6.1.1",
+              "display": "入力方式選択",
+              "concept": [
+                {
+                  "code": "R1.6.1.1.1",
+                  "display": "テンプレート入力"
+                },
+                {
+                  "code": "R1.6.1.1.2",
+                  "display": "定型文入力"
+                },
+                {
+                  "code": "R1.6.1.1.3",
+                  "display": "入力方式のデフォルト設定"
+                }
+              ]
+            },
+            {
+              "code": "R1.6.1.3",
+              "display": "他記録（レポート・結果等）の引用（全記録・文章）",
+              "definition": "あらゆる入力場面で、Write once,use anywhereを実現",
+              "concept": [
+                {
+                  "code": "R1.6.1.3.1",
+                  "display": "コピーペーストによる複写入力"
+                },
+                {
+                  "code": "R1.6.1.3.2",
+                  "display": "参照先リンク情報のみの入力"
+                }
+              ]
+            },
+            {
+              "code": "R1.6.1.4",
+              "display": "マルチモーダル入力",
+              "concept": [
+                {
+                  "code": "R1.6.1.4.1",
+                  "display": "シェーマ入力",
+                  "concept": [
+                    {
+                      "code": "R1.6.4.1.1",
+                      "display": "家系図作成・家族歴情報入力"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.6.1.4.2",
+                  "display": "イメージ・音声取り込み",
+                  "concept": [
+                    {
+                      "code": "R1.6.1.4.2.1",
+                      "display": "静止画取り込み"
+                    },
+                    {
+                      "code": "R1.6.1.4.2.2",
+                      "display": "動画取り込み"
+                    },
+                    {
+                      "code": "R1.6.1.4.2.3",
+                      "display": "音声取り込み"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.6.1.5",
+              "display": "患者による入力"
+            }
+          ]
+        },
+        {
+          "code": "R1.6.2",
+          "display": "入力済み情報の構造化",
+          "concept": [
+            {
+              "code": "R1.6.2.1",
+              "display": "SOAP自動構造化"
+            }
+          ]
+        },
+        {
+          "code": "R1.6.3",
+          "display": "診療支援",
+          "concept": [
+            {
+              "code": "R1.6.3.1",
+              "display": "クリニカルパス"
+            },
+            {
+              "code": "R1.6.3.2",
+              "display": "療養計画書等の文書の自動作成"
+            },
+            {
+              "code": "R1.6.3.3",
+              "display": "Planからのスケジューリングオーダの自動作成",
+              "definition": "例）計画書から定期オーダセット(来院毎、半年毎の検査、1年毎の紹介、等)の自動作成"
+            },
+            {
+              "code": "R1.6.3.4",
+              "display": "診療参考情報の表示",
+              "concept": [
+                {
+                  "code": "R1.6.3.4.1",
+                  "display": "臨床ガイドライン・参考となる診療指針の表示",
+                  "concept": [
+                    {
+                      "code": "R1.6.3.4.1.1",
+                      "display": "対象疾患・プロブレムベースで自動選択して表示"
+                    },
+                    {
+                      "code": "R1.6.3.4.1.2",
+                      "display": "患者の診療コンテキスト（病状）に合わせて自動選択して表示"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.6.3.4.2",
+                  "display": "外部医療参考情報リソースのリアルタイム検索",
+                  "concept": [
+                    {
+                      "code": "R1.6.3.4.2.X1",
+                      "display": ":医薬品添付文書情報"
+                    },
+                    {
+                      "code": "R1.6.3.4.2.X2",
+                      "display": ":ガイドライン"
+                    },
+                    {
+                      "code": "R1.6.3.4.2.X3",
+                      "display": ":PubMED"
+                    },
+                    {
+                      "code": "R1.6.3.4.2.X4",
+                      "display": ":今日のXX指針"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "R1.6.3.5",
+              "display": "ちょこっとお助け情報の表示",
+              "concept": [
+                {
+                  "code": "R1.6.3.5.X1",
+                  "display": ":処方注射の用量計算機",
+                  "definition": "小児用処方量の計算、化学療法の用量計算機"
+                },
+                {
+                  "code": "R1.6.3.5.X2",
+                  "display": ":検体採取ヘルプ",
+                  "definition": "検査オーダや検体採取時の検体とりかた・用意する採取管種別"
+                },
+                {
+                  "code": "R1.6.3.5.X3",
+                  "display": ":検体検査正常値"
+                }
+              ]
+            },
+            {
+              "code": "R1.6.3.6",
+              "display": "ガイドラインベースの動的ナビゲーション"
+            },
+            {
+              "code": "R1.6.3.7",
+              "display": "施設横断データにもとづく診療参考情報の表示"
+            }
+          ]
+        },
+        {
+          "code": "R1.6.4",
+          "display": "医療安全支援",
+          "concept": [
+            {
+              "code": "R1.6.4.1",
+              "display": "アラート・リマインド",
+              "concept": [
+                {
+                  "code": "R1.6.4.1.T1",
+                  "display": ":処方作成",
+                  "concept": [
+                    {
+                      "code": "R1.6.4.1.T1.T1",
+                      "display": ":処方薬",
+                      "definition": "患者プロブレムとの妥当性チェック"
+                    },
+                    {
+                      "code": "R1.6.4.1.T1.T2",
+                      "display": ":処方量",
+                      "definition": "推奨量、上限量など書き下し（未）"
+                    },
+                    {
+                      "code": "R1.6.4.1.T1.T3",
+                      "display": ":処方用法",
+                      "definition": "添付文書の適用用法との妥当性チェック"
+                    },
+                    {
+                      "code": "R1.6.4.1.T1.T4",
+                      "display": ":処方全体",
+                      "concept": [
+                        {
+                          "code": "R1.6.4.1.T1.T4.T1",
+                          "display": ":相互作用"
+                        },
+                        {
+                          "code": "R1.6.4.1.T1.T4.T2",
+                          "display": ":アレルギー情報チェック"
+                        }
+                      ]
+                    },
+                    {
+                      "code": "R1.6.4.1.T1.T5",
+                      "display": ":処方の保険適用範囲"
+                    }
+                  ]
+                },
+                {
+                  "code": "R1.6.4.1.T2",
+                  "display": ":検査オーダ作成"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.6.5",
+          "display": "研究支援"
+        },
+        {
+          "code": "R1.6.6",
+          "display": "分析支援"
+        },
+        {
+          "code": "R1.6.7",
+          "display": "教育支援"
+        },
+        {
+          "code": "R1.6.8",
+          "display": "診療効率化支援",
+          "concept": [
+            {
+              "code": "R1.6.8.1",
+              "display": "定型的操作のショートカット実行",
+              "definition": "説明）ローコードツールやRPAが付属していて個人で自動化のためのワークフローを定義"
+            },
+            {
+              "code": "R1.6.8.2",
+              "display": "文書の下書きの自動作成"
+            },
+            {
+              "code": "R1.6.8.3",
+              "display": "オーダ提案"
+            },
+            {
+              "code": "R1.6.8.4",
+              "display": "患者の署名文書の電子化署名",
+              "definition": "説明）電子サイン(ペンタブやタッチディスプレイ、タブレット）。患者のスマホの活用。"
+            },
+            {
+              "code": "R1.6.8.5",
+              "display": "医療文書の電子配送サービス連携"
+            },
+            {
+              "code": "R1.6.8.6",
+              "display": "長期ケアパスによる計画支援",
+              "definition": "長説明）期パス・慢性期継続パスの活用"
+            }
+          ]
+        },
+        {
+          "code": "R1.6.9",
+          "display": "会計業務支援",
+          "concept": [
+            {
+              "code": "R1.6.9.1",
+              "display": "診療報酬請求の効率化支援",
+              "concept": [
+                {
+                  "code": "R1.6.9.1.1",
+                  "display": "管理料算定条件ベースの算定等各種注意喚起"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.6.10",
+          "display": "診療所経営支援",
+          "concept": [
+            {
+              "code": "R1.6.10.1",
+              "display": "診療実績ダッシュボード"
+            }
+          ]
+        },
+        {
+          "code": "R1.6.11",
+          "display": "システム導入・更新支援",
+          "concept": [
+            {
+              "code": "R1.6.11.1",
+              "display": "標準マスター更新を外部サーバから自動で行う"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "R1.7",
+      "display": "診療記録管理",
+      "concept": [
+        {
+          "code": "R1.7.1",
+          "display": "プロブレムリスト管理"
+        },
+        {
+          "code": "R1.7.2",
+          "display": "オーダと記録の履歴管理"
+        },
+        {
+          "code": "R1.7.3",
+          "display": "要約の作成",
+          "concept": [
+            {
+              "code": "R1.7.3.1",
+              "display": "前回受診までの「診療ダイジェスト」作成",
+              "definition": "メモ）サマリー、レジュメ、ダイジェストの違いなどを定義。"
+            },
+            {
+              "code": "R1.7.3.2",
+              "display": "診療の質の評価指標の可視化"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "R1.8",
+      "display": "患者基本情報の登録・管理",
+      "concept": [
+        {
+          "code": "R1.8.1",
+          "display": "患者個人識別情報の登録・管理"
+        },
+        {
+          "code": "R1.8.2",
+          "display": "保険情報の登録・管理"
+        }
+      ]
+    },
+    {
+      "code": "R1.9",
+      "display": "患者環境の登録・管理",
+      "concept": [
+        {
+          "code": "R1.9.1",
+          "display": "関連者情報（支援者・介護者・キーパーソンなど）"
+        },
+        {
+          "code": "R1.9.2",
+          "display": "家族構成"
+        },
+        {
+          "code": "R1.9.3",
+          "display": "介護等の患者支援サービスの利用状況"
+        }
+      ]
+    },
+    {
+      "code": "R1.10",
+      "display": "受診情報管理",
+      "concept": [
+        {
+          "code": "R1.10.1",
+          "display": "外来受診歴情報"
+        },
+        {
+          "code": "R1.10.2",
+          "display": "入退院履歴情報"
+        }
+      ]
+    },
+    {
+      "code": "R1.11",
+      "display": "連絡コミュニケーション・メモ伝達",
+      "concept": [
+        {
+          "code": "R1.11.1",
+          "display": "患者とのコミュニケーション記録",
+          "definition": "近況報告や雑談の記載(家族との関係などを含む)"
+        }
+      ]
+    },
+    {
+      "code": "R1.12",
+      "display": "施設間・患者連携",
+      "concept": [
+        {
+          "code": "R1.12.1",
+          "display": "リモート診療支援",
+          "concept": [
+            {
+              "code": "R1.12.1.1",
+              "display": "訪問看護診療の支援"
+            }
+          ]
+        },
+        {
+          "code": "R1.12.2",
+          "display": "職種間協働",
+          "concept": [
+            {
+              "code": "R1.12.2.1",
+              "display": "役割（ロール）ベースの権限配分"
+            },
+            {
+              "code": "R1.12.2.2",
+              "display": "処方読みあげによる音声支援"
+            }
+          ]
+        },
+        {
+          "code": "R1.12.3",
+          "display": "地域医療連携",
+          "concept": [
+            {
+              "code": "R1.12.3.1",
+              "display": "他の医療機関との診療連携",
+              "concept": [
+                {
+                  "code": "R1.12.3.1.1",
+                  "display": "他機関からのカルテ参照・追記",
+                  "definition": "へき地診療支援病院の医師が、電子カルテを参照し、必要に応じて記録追加ができる。"
+                },
+                {
+                  "code": "R1.12.3.1.2",
+                  "display": "他機関の記録の参照・引用",
+                  "definition": "支援病院からの診療情報提供書のコピー、退院時サマリーのコピー、検査結果などを直接ファイリング（へき地電子カルテに追加）できる。"
+                },
+                {
+                  "code": "R1.12.3.1.3",
+                  "display": "他機関からの文書の電子的な取得"
+                },
+                {
+                  "code": "R1.12.3.1.4",
+                  "display": "他機関とのオンラインミーティング・チャット相談"
+                },
+                {
+                  "code": "R1.12.3.1.5",
+                  "display": "支援病院での診療カンファランス"
+                }
+              ]
+            },
+            {
+              "code": "R1.12.3.2",
+              "display": "巡回診療所での診療支援",
+              "concept": [
+                {
+                  "code": "1.12.3.2.1",
+                  "display": "訪問診療先でオフラインでカルテを利用"
+                },
+                {
+                  "code": "1.12.3.2.2",
+                  "display": "多様な解像度デバイスに対応"
+                }
+              ]
+            },
+            {
+              "code": "R1.12.3.3",
+              "display": "地域医療データ分析・可視化"
+            }
+          ]
+        },
+        {
+          "code": "R1.12.4",
+          "display": "患者との診療コミュニケーション",
+          "concept": [
+            {
+              "code": "R1.12.4.1",
+              "display": "患者・職種間コミュニケーション支援",
+              "concept": [
+                {
+                  "code": "R1.12.4.1.1",
+                  "display": "患者を中心としたコミュニケーショングループ形成"
+                },
+                {
+                  "code": "R1.12.4.1.2",
+                  "display": "サービス提供者の職種別グループコミュニケーション"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "R1.12.4.2",
+          "display": "患者による共同診療の支援",
+          "concept": [
+            {
+              "code": "R1.12.4.2.1",
+              "display": "患者によるカルテの閲覧・追記"
+            },
+            {
+              "code": "R1.3.7.1.T1",
+              "display": ":連携するPHRリソースの表示",
+              "property": [
+                {
+                  "code": "elementClass",
+                  "valueString": "PHR"
+                }
+              ]
+            },
+            {
+              "code": "R1.12.4.2.2",
+              "display": "患者による「オンライン診療」のオンライン予約"
+            },
+            {
+              "code": "R1.12.4.2.3",
+              "display": "患者による事前に問診や概要情報の登録"
+            },
+            {
+              "code": "R1.12.4.2.4",
+              "display": "患者よる写真等による記録送信"
+            },
+            {
+              "code": "R1.12.4.2.5",
+              "display": "ePRO(Patient Report Outcome)記録"
+            },
+            {
+              "code": "R1.12.4.2.6",
+              "display": "患者へのPDF文書等の生成とオンライン提供"
+            }
+          ]
+        },
+        {
+          "code": "R1.12.4.3",
+          "display": "診療中断患者への診療勧奨",
+          "definition": "説明）診療を中断している患者を見つける。患者全員の一覧（マップ）を表示して要注意患者をマークするなど。"
+        }
+      ]
+    },
+    {
+      "code": "R1.12.5",
+      "display": "デジタルツイン対応・データ二次利用",
+      "concept": [
+        {
+          "code": "R1.12.5.1",
+          "display": "全データのFHIR形式出力・転送"
+        },
+        {
+          "code": "R1.12.5.2",
+          "display": "仮名化・匿名化の自動処理"
+        },
+        {
+          "code": "R1.12.5.3",
+          "display": "集計サマリー・定期レポート作成"
+        },
+        {
+          "code": "R1.12.5.4",
+          "display": "二次利用目的のデータ検索・抽出"
+        }
+      ]
+    }
+  ],
+  "version": "0.9.0",
+  "caseSensitive": true,
+  "experimental": false,
+  "publisher": "NexEHRs-CPC",
+  "copyright": "NexEHRs-CPC CC BY-ND 4.0",
+  "hierarchyMeaning": "is-a",
+  "property": [
+    {
+      "code": "elementClass",
+      "uri": "http://hexehrs.sip3.jp/CodeSystem/elementClass",
+      "type": "string"
+    },
+    {
+      "code": "relatedCondition",
+      "uri": "http://hexehrs.sip3.jp/CodeSystem/relatedCondition",
+      "type": "string"
+    },
+    {
+      "code": "soapClass",
+      "uri": "http://hexehrs.sip3.jp/CodeSystem/soapClass",
+      "type": "string"
+    },
+    {
+      "code": "searchClass",
+      "uri": "http://hexehrs.sip3.jp/CodeSystem/searchClass",
+      "type": "string"
+    }
+  ],
+  "count": 252
+}

@@ -1,0 +1,5 @@
+[HeXEHRS_CoreFunctions_Record_CS]: CodeSystem-coreFunctions-record-cs.html
+[HeXEHRS_CoreFunctions_InjectionOrder_CS]: CodeSystem-coreFunctions-injectionOrder-cs.html
+[HeXEHRS_CoreFunctions_InsuranceMngFeeOrder_CS]: CodeSystem-coreFunctions-insuranceMngFeeOrder-cs.html
+[HeXEHRS_CoreFunctions_LaboExamOrder_CS]: CodeSystem-coreFunctions-laboExamOrder-cs.html
+[HeXEHRS_CoreFunctions_PrescriptionOrder_CS]: CodeSystem-coreFunctions-prescriptionOrder-cs.html

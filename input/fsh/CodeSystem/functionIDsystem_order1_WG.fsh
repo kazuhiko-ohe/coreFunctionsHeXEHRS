@@ -1,8 +1,8 @@
 
 CodeSystem: HeXEHRS_CoreFunctions_PrescriptionOrder_CS
 Id: coreFunctions-prescriptionOrder-cs
-Title: "HeXEHRS System Core Functions Code System for PrescriptionOrder"
-Description: "HeXEHRS Core Functions for PrescriptionOrder のID体系"
+Title: "HeXEHRS System Core Functions Code System for PrescriptionOrder　処方オーダー"
+Description: "HeXEHRS Core Functions for PrescriptionOrder 処方オーダー　のID体系"
 * ^url = "http://hexehrs.sip3.jp/coreFunctions-prescriptionOrder-cs"
 * ^title = "HeXEHRS System Core Functions Code System for PrescriptionOrder"
 

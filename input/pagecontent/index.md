@@ -1,7 +1,3 @@
-.table-page {
-  margin-left: 5%;
-}
-
 
 ###  HeXERHSコア機能一覧
 

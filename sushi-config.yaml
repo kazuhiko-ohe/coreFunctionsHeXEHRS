@@ -69,7 +69,12 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   no-validate:
     - '*/hl7.fhir.jp.core'
 #
-#  special-url:
+special-url:
+    - http://hexehrs.sip3.jp/coreFunctions-injectionOrder-cs
+    - http://hexehrs.sip3.jp/coreFunctions-insuranceMngFeeOrder-cs
+    - http://hexehrs.sip3.jp/coreFunctions-laboExamOrder-cs
+    - http://hexehrs.sip3.jp/coreFunctions-prescriptionOrder-cs
+    - http://hexehrs.sip3.jp/coreFunctions-record-cs
 #    - http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS
 
   

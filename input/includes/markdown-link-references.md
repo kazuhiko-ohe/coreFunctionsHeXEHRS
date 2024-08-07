@@ -11,7 +11,7 @@
 [JP_Observation_Common_Operation]: StructureDefinition-jp-observation-common.html#operation一覧
 
 <!-- ImplementationGuide -->
-[JFAGY]: ImplementationGuide-jpfhir.jp.fhir.core.terminology.JFAGY.html
+[CoreFunctions]: ImplementationGuide-hexehrs.sip3.jp.html
 
 <!-- StructureDefinition: Profile, DataType -->
 
@@ -22,11 +22,12 @@
 <!-- SearchParameter -->
 
 <!-- CodeSystem -->
-[JP_JfagyFoodAllergen_CS]: CodeSystem-jp-jfagy-food-allergen-cs.html
-[JP_JfagyNonFoodNonMedicationAllergen_CS]: CodeSystem-jp-jfagy-non-food-non-medication-allergen-cs.html
-[JP_JfagySpecialCode_CS]: CodeSystem-jp-jfagy-special-code-cs.html
+[HeXEHRS_CoreFunctions_InjectionOrder_CS]: CodeSystem-coreFunctions-injectionOrder-cs.html
+[HeXEHRS_CoreFunctions_InsuranceMngFeeOrder_CS]: CodeSystem-coreFunctions-insuranceMngFeeOrder-cs.html
+[HeXEHRS_CoreFunctions_LaboExamOrder_CS]: CodeSystem-coreFunctions-laboExamOrder-cs.html
+[HeXEHRS_CoreFunctions_PrescriptionOrder_CS]: CodeSystem-coreFunctions-prescriptionOrder-cs.html
+[HeXEHRS_CoreFunctions_Record_CS]: CodeSystem-coreFunctions-record-cs.html
 
 <!-- ValueSet -->
-[JP_AllergyIntolerance_VS]: ValueSet-jp-allergyintolerance-vs.html
 
 <!-- Example -->

@@ -13,7 +13,7 @@ HeXERHSコア機能は、診療所の電子カルテのコア機能を階層構�
 オーダー機能について、作成途上であり、処方、注射、検体検査、医学管理料のみが記述されている。<br>
 <br>
 <br>
-  - [記録・管理系機能][HeXEHRS_CoreFunctions_Record_CS]
+  - [記録・管理系機能][HeXEHRS_CoreFunctions_Record_CS] HeXEHRS_CoreFunctions_Record_CS
 <br>
   - オーダ機能<br>
     - [処方オーダ][HeXEHRS_CoreFunctions_PrescriptionOrder_CS] HeXEHRS_CoreFunctions_PrescriptionOrder_CS
